@@ -53,20 +53,76 @@ export default {
       type: Array,
       default: () => {
         return [
-          { id: 1, src: '../../static/images/1.jpg' },
-          { id: 2, src: '../../static/images/2.jpg' },
-          { id: 3, src: '../../static/images/3.jpg' },
-          { id: 4, src: '../../static/images/4.jpg' },
-          { id: 5, src: '../../static/images/5.jpg' },
-          { id: 6, src: '../../static/images/6.jpg' },
-          { id: 7, src: '../../static/images/7.jpg' },
-          { id: 8, src: '../../static/images/8.jpg' },
-          { id: 9, src: '../../static/images/9.jpg' },
-          { id: 10, src: '../../static/images/10.jpg' },
-          { id: 11, src: '../../static/images/11.jpg' },
-          { id: 12, src: '../../static/images/12.jpg' },
-          { id: 13, src: '../../static/images/13.jpg' },
-          { id: 14, src: '../../static/images/14.jpg' }
+          {
+            id: 1,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/1.jpg'
+          },
+          {
+            id: 2,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/2.jpg'
+          },
+          {
+            id: 3,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/3.jpg'
+          },
+          {
+            id: 4,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/4.jpg'
+          },
+          {
+            id: 5,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/5.jpg'
+          },
+          {
+            id: 6,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/6.jpg'
+          },
+          {
+            id: 7,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/7.jpg'
+          },
+          {
+            id: 8,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/8.jpg'
+          },
+          {
+            id: 9,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/9.jpg'
+          },
+          {
+            id: 10,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/10.jpg'
+          },
+          {
+            id: 11,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/11.jpg'
+          },
+          {
+            id: 12,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/12.jpg'
+          },
+          {
+            id: 13,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/13.jpg'
+          },
+          {
+            id: 14,
+            src:
+              'https://raw.githubusercontent.com/zhangxiaoshang/va-carousel/master/static/images/14.jpg'
+          }
         ]
       }
     },

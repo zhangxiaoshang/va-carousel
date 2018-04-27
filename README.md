@@ -4,6 +4,17 @@
 
 ## 体验
 
+方式 1 [在线 Demo http://va-carousel.xiaoshang.online](http://va-carousel.xiaoshang.online)
+
+方式 2
+
+```bash
+git clone https://github.com/zhangxiaoshang/va-carousel.git
+cd va-carousel
+npm install
+npm start
+```
+
 ## 使用
 
 1.  使用 vue-cli 构建一个项目

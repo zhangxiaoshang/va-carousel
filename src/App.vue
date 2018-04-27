@@ -21,7 +21,7 @@
         <a href="https://github.com/zhangxiaoshang/va-carousel#readme"> 点击这里 </a>查看所有支持的属性、事件、solt</li>
     </ol>
     <VaCarousel total="8"
-      interval=1000
+      :interval=1000
       prevText="上一张"
       nextText="下一张"
       arrow="always"

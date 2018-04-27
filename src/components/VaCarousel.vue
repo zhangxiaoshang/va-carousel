@@ -23,7 +23,7 @@
           @click="selectedItem(item, index)">
       </div>
 
-      <template v-if="arrow === 'always' || hover">
+      <template v-if="arrow === 'always' || (hover && arrow !== 'never')">
         <span key="prev"
           class="preview"
           @click="prev">
@@ -274,36 +274,56 @@ export default {
 
     // 列表过渡 beging
     beforeEnter(el) {
-      el.style.opacity = 0
-      if (this.isReverse) {
-        el.style.transform = 'translateX(-100%)'
-      } else {
-        el.style.transform = 'translateX(100%)'
+      // 只对image-item使用过渡
+      let isImageItem = el.className.indexOf('image-item') > -1
+      if (isImageItem) {
+        el.style.opacity = 0
+        if (this.isReverse) {
+          el.style.transform = 'translateX(-100%)'
+        } else {
+          el.style.transform = 'translateX(100%)'
+        }
       }
     },
 
     enter(el, done) {
-      Velocity(el, { opacity: 1, translateX: '0px' }, { complate: done })
+      // 只对image-item使用过渡
+      let isImageItem = el.className.indexOf('image-item') > -1
+      if (isImageItem) {
+        Velocity(el, { opacity: 1, translateX: '0px' }, { complate: done })
+      } else {
+        done()
+      }
     },
 
     beforeLeave(el) {
-      el.style.position = 'absolute'
-      if (this.isReverse) {
-        el.style.right = 0
-      } else {
-        el.style.left = 0
+      // 只对image-item使用过渡
+      let isImageItem = el.className.indexOf('image-item') > -1
+      if (isImageItem) {
+        el.style.position = 'absolute'
+        if (this.isReverse) {
+          el.style.right = 0
+        } else {
+          el.style.left = 0
+        }
       }
     },
 
     leave(el, done) {
-      el.style.opacity = 0
-      if (this.isReverse) {
-        el.style.right = `-${this.itemWidth}`
-        // el.style.transform = 'translateX(100%)'
+      // 只对image-item使用过渡
+      let isImageItem = el.className.indexOf('image-item') > -1
+      if (isImageItem) {
+        el.style.opacity = 0
+        if (this.isReverse) {
+          el.style.right = `-${this.itemWidth}`
+          // el.style.transform = 'translateX(100%)'
+        } else {
+          el.style.transform = 'translateX(-100%)'
+        }
+        setTimeout(done, 1000)
       } else {
-        el.style.transform = 'translateX(-100%)'
+        done()
       }
-      setTimeout(done, 1000)
     }
     // 列表过渡 end
   }

@@ -1,11 +1,10 @@
 {
   "name": "va-carousel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "一个vue写的轮播组件",
   "author": "zhangxiaoshang <zhangxiaoshang66@163.com>",
   "scripts": {
-    "dev":
-      "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "unit": "jest --config test/unit/jest.conf.js --coverage",
     "e2e": "node test/e2e/runner.js",
@@ -17,12 +16,14 @@
     "type": "git",
     "url": "git+https://github.com/zhangxiaoshang/va-carousel"
   },
-  "keywords": ["vue", "carousel"],
+  "keywords": [
+    "vue",
+    "carousel"
+  ],
   "bugs": {
     "url": "https://github.com/zhangxiaoshang/va-carousel/issues"
   },
   "homepage": "https://github.com/zhangxiaoshang/va-carousel#readme",
-
   "dependencies": {
     "vue": "^2.5.2",
     "velocity-animate": "^1.2.3"
@@ -91,5 +92,9 @@
     "node": ">= 6.0.0",
     "npm": ">= 3.0.0"
   },
-  "browserslist": ["> 1%", "last 2 versions", "not ie <= 8"]
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
 }

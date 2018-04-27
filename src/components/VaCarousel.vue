@@ -254,7 +254,7 @@ export default {
 }
 </script>
 
-<style lang="less" scope>
+<style scope>
 .va-carousel {
   margin: 0 auto;
   overflow: hidden;
@@ -282,13 +282,14 @@ export default {
   border-radius: 8px;
   cursor: pointer;
   transition: all 1s;
+}
 
-  &.active {
-    transform: scale(1.2);
-  }
-  img {
-    border-radius: 8px;
-  }
+.image-item.active {
+  transform: scale(1.2);
+}
+
+.image-item img {
+  border-radius: 8px;
 }
 
 .preview,

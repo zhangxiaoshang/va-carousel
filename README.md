@@ -76,7 +76,7 @@ npm run dev
 | width     | 走马灯的宽度                                                                   | string  | -                  | 90%    |
 | imgWidth  | 图片宽度                                                                       | string  | -                  | 100%   |
 | imgHeight | 图片高度                                                                       | string  | -                  | 70%    |
-| autoplay  | 是否自动切换                                                                   | boolean | -                  | true   |
+| autoplay  | 是否自动切换                                                                   | boolean | -                  | true   |
 | interval  | 自动切换的时间间隔，单位为毫秒                                                 | number  | -                  | 2000   |
 | prevText  | 向上箭头上显示的内容                                                           | string  | -                  | prev   |
 | nextText  | 向下箭头上显示的内容                                                           | string  | -                  | next   |

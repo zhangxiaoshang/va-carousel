@@ -2,7 +2,7 @@
   <div id="app">
     <h1>一个基于vue的图片轮播组件</h1>
 
-    <p>该组件实现上参考ElementUI/carousel组件</p>
+    <p>该组件实现上参考ElementUI/carousel</p>
 
     <h3>Demo1 默认效果</h3>
     <ol>

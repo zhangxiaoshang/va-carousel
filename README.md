@@ -1,10 +1,12 @@
 # va-carousel
 
-> 基于 vue 的轮播组件
+> 一个基于 vue 的图片轮播组件
 
 ## 体验
 
-方式 1 [在线 Demo http://va-carousel.xiaoshang.online](http://va-carousel.xiaoshang.online)
+方式 1
+
+在线Demo  [http://va-carousel.xiaoshang.online](http://va-carousel.xiaoshang.online)
 
 方式 2
 

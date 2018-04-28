@@ -1,6 +1,6 @@
 {
   "name": "va-carousel",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "一个vue写的图片轮播组件",
   "author": "zhangxiaoshang <zhangxiaoshang66@163.com>",
   "scripts": {
